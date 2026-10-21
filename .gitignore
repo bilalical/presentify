@@ -1,0 +1,68 @@
+# ===== Secrets and config =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Biometric / personal data (NEVER commit) =====
+data/
+enrollment/
+faces/
+snapshots/
+unknown_faces/
+embeddings/
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+
+# ===== Images and video (face photos, test recordings) =====
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ===== Model weights (download via setup script instead) =====
+*.onnx
+*.pth
+*.pt
+*.h5
+models/
+.insightface/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ===== Node / frontend =====
+node_modules/
+dist/
+build/
+
+# ===== Editors and OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Logs =====
+*.log
+logs/

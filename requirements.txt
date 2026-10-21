@@ -1,0 +1,15 @@
+# --- Computer vision / recognition ---
+opencv-python>=4.8,<4.12      # not -headless: you need imshow/waitKey
+numpy>=1.24,<2                # insightface can break with numpy 2.x
+insightface>=0.7.3
+onnxruntime>=1.16             # CPU build; use onnxruntime-gpu instead if you have an NVIDIA GPU
+
+# --- Backend (needed from week 2-3) ---
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-dotenv>=1.0
+SQLAlchemy>=2.0
+
+# --- Optional, add when you get to the dashboard ---
+# streamlit>=1.30
+# pandas>=2.0
